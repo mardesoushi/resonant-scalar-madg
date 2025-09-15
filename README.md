@@ -16,3 +16,9 @@ Many theories about dark matter have emerged due to its strong theoretical appea
 
 [Full text](https://arxiv.org/abs/2308.03680)
 
+## To install fortran integration
+
+```bash
+python -m numpy.f2py -c fortran_quad.f90 -m fortran_quad
+python -m numpy.f2py -c fortran_integral.f90 -m fortran_integral
+```

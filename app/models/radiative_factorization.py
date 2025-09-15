@@ -1,11 +1,10 @@
 import numpy as np
-from  models.general_parameters import *
 alph = (1/137)    # QED coupling constant 
 from scipy.integrate import quad
-#import fortran_quad
+import fortran_quad
 
 import scipy.special as sp
-from sympy import *
+# from sympy import *
 
 ################ ISR
 from scipy.integrate import quad

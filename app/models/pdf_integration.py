@@ -1,8 +1,9 @@
 import numpy as np
-import models.general_parameters as gp
-import models.sigma0_xsections as sig0
+from . import general_parameters as gp
+from . import sigma0_xsections as sig0
 #import fortran_integral
-#import fortran_quad
+import fortran_quad
+import lhapdf
 # class vectorize(np.vectorize):
 #     def __get__(self, obj, objtype):
 #         return functools.partial(__call__, obj)
@@ -15,7 +16,6 @@ errorel = 1
     ## INTEGRATION PARAMETERS ##
     ## x_1 integration using LHAPDF6 for a DY like process (Field, R. D, Pertubative QCD, p. 174) ##
 
-import lhapdf
 
 @np.vectorize    
 def dsigdM2_ISR(pdf, s, tau, Mmed, Q2mod, mx, gr, gl, gx, sighat):   ### Returns the cross section value in function of one or two of the parameters

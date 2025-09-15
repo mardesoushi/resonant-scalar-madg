@@ -6,6 +6,7 @@ import numpy as np
 import scipy as sp
 # import fortran_quad
 # from  import models.sigma0_xsections as sig0
+from . import sigma0_xsections as sig0
 from scipy.integrate import quad as spquad
 
 
