@@ -1,3 +1,6 @@
 [submodule "syHEP"]
 	path = syHEP
 	url = https://github.com/mardsouza/syHEP.git
+[submodule "MadPy"]
+	path = MadPy
+	url = https://github.com/mardsouza/MadPy.git
